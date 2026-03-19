@@ -1,0 +1,8 @@
+name: Deploy
+on: push
+jobs:
+  hellowWorld:
+   runs-on: ubunut-latest
+   steps:
+       - name: to production
+         run: echo "Deploy to production"
