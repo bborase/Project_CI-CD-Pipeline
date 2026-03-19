@@ -1,8 +1,11 @@
 name: Deploy
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   hellowWorld:
-   runs-on: ubunut-latest
-   steps:
-       - name: to production
-         run: echo "Deploy to production"
+    runs-on: ubuntu-latest
+    steps:
+      - name: to production
+        run: echo "Deploy to production"
